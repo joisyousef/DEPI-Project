@@ -1,0 +1,53 @@
+.main-header {
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  margin-top: 8.5625rem;
+}
+
+.main-header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to right,
+    transparent 30%,
+    white 50%,
+    transparent 70%
+  );
+  height: 100%;
+}
+
+.main-header .container .main-title {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.main-header .container .breadcrumbs a {
+  font-weight: bold;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.main-header .container .breadcrumbs a:hover {
+  color: var(--color-primary);
+}
+
+.main-header .container .breadcrumbs a.active {
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .main-header .container .main-title {
+    font-size: 1.9rem;
+  }
+}
