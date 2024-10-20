@@ -1,18 +1,28 @@
 import React from "react";
 import "../../style/Partners.css";
+
 const Partners = () => {
-  const partners = ["logo1.png", "logo2.png", "logo3.png", "logo4.png"];
+  const partners = [
+    "/assets/images/about/1.png",
+    "/assets/images/about/2.png",
+    "/assets/images/about/3.png",
+    "/assets/images/about/4.png",
+    "/assets/images/about/5.png",
+  ];
 
   return (
-    <section class="about-imgs">
-      <div class="container">
-        <div class="imgs">
-          <img src="/about/1.png" alt="" />
-          <img src="/about/2.png" alt="" />
-          <img src="/about/3.png" alt="" />
-          <img src="/about/4.png" alt="" />
-          <img src="/about/5.png" alt="" />
-          <img src="/about/2.png" alt="" />
+    <section className="about-imgs">
+      <div className="container">
+        <h2>Our Partners</h2>
+        <div className="partners-grid">
+          {partners.map((partner, index) => (
+            <img
+              key={index}
+              src={partner}
+              alt={`Partner ${index + 1}`}
+              className="partner-logo"
+            />
+          ))}
         </div>
       </div>
     </section>

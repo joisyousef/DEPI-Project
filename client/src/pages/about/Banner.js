@@ -6,7 +6,7 @@ const Banner = () => {
     <div
       className="banner text-center"
       style={{
-        backgroundImage: "url(/main-header.jpg)",
+        backgroundImage: "url(../../../public/assets/images/main-header.jpg)",
         backgroundSize: "cover",
       }}
     >
